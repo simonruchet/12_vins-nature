@@ -12,3 +12,28 @@ img,
 video {
   display: block;
 }
+
+@import "bootstrap/scss/bootstrap-grid";
+
+@font-face {
+  font-family: "Moalang";
+  src: url("../font/SwistblnkMoalangMelintang.woff2") format("woff2"),
+    url("../font/SwistblnkMoalangMelintang.woff") format("woff");
+}
+
+:root {
+  --prim-green: #1c3c22; /* Green */
+  --sec-yellow: #f9f8f1; /* Yellow */
+}
+
+.row + .row {
+  margin-top: 16px;
+}
+
+.row > .col,
+.row > [class^="col-"] {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgba(86, 61, 124, 0.15);
+  border: 1px solid rgba(86, 61, 124, 0.2);
+}
