@@ -14,13 +14,35 @@
     <link rel="stylesheet" href="https://use.typekit.net/bxh7wai.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col">colonne 1</div>
-        <div class="col">colonne 2</div>
-      </div>
+    <div
+      class="container"
+      data-0="transform:translateX(0%);"
+      data-1000="transform:translateX(-200%);"
+    >
+      <section>
+        <div class="content">
+          <h2>Section One</h2>
+          <p>Page une</p>
+        </div>
+      </section>
+      <section>
+        <div class="content">
+          <h2>Section Two</h2>
+          <p>Page deux</p>
+        </div>
+      </section>
+      <section>
+        <div class="content">
+          <h2>Section Three</h2>
+          <p>Page trois</p>
+        </div>
+      </section>
     </div>
 
     <script src="js/main.js" type="module"></script>
+    <script type="text/javascript" src="js/skrollr.js"></script>
+    <script type="text/javascript">
+      var s = skrollr.init();
+    </script>
   </body>
 </html>

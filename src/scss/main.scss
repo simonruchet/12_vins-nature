@@ -37,3 +37,43 @@ video {
   background-color: rgba(86, 61, 124, 0.15);
   border: 1px solid rgba(86, 61, 124, 0.2);
 }
+
+body {
+  font-family: Elza;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+}
+
+.container section {
+  min-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: vh;
+  background-color: aquamarine;
+}
+
+.container section:nth-child(2) {
+  background-color: bisque;
+}
+
+.container section:nth-child(3) {
+  background-color: rgb(206, 196, 255);
+}
+
+@media (max-width: 991px) {
+  .container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    transform: none !important;
+  }
+}
