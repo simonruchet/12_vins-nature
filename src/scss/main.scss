@@ -123,3 +123,35 @@ section:nth-child(even) {
   background-color: #1c3c22;
   @include colwidth(8);
 }
+
+.usershop {
+  display: flex;
+}
+
+.texteheader {
+  display: flex;
+  gap: 58px;
+  font-size: 14px;
+}
+
+.langue {
+  display: flex;
+  width: 59px;
+  padding: 3px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  border: 0.7px solid var(--black, #000);
+  text-align: center;
+  font-size: 14px;
+}
+
+.bgmenu {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.headerbascontent {
+  display: flex;
+}
