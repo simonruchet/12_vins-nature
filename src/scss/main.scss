@@ -95,3 +95,60 @@ section:nth-child(odd) {
 section:nth-child(even) {
   background-color: #fff6d5;
 }
+
+.homepage .logo {
+  padding-top: 32px;
+}
+
+.homepage h1 {
+  font-family: "Playfair Display";
+  font-size: 100px;
+  font-weight: 900;
+  padding-top: 55px;
+  line-height: 91.97%;
+}
+
+.homepage h2 {
+  color: var(--prim-green, #1c3c22);
+  font-family: "Swistblnk Moalang Melintang";
+  font-size: 170px;
+  line-height: 67.738%;
+  font-weight: 400;
+}
+
+.homepage h3 {
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-weight: 900;
+  padding-top: 37px;
+}
+
+.homepage h3 b {
+  font-weight: 900;
+  color: var(--prim-green, #1c3c22);
+}
+
+.headerbas {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@mixin colwidth($multiplication) {
+  width: calc(
+    $multiplication * 100% + $multiplication * 24px - 12px + 100vw - 960px
+  );
+
+  @media (min-width: 1200px) {
+    width: calc(
+      $multiplication * 100% + $multiplication * 24px - 12px + 100vw - 1140px
+    );
+  }
+}
+
+.vigneron {
+  position: relative;
+  background-color: #1c3c22;
+  @include colwidth(8);
+}

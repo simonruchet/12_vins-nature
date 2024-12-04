@@ -15,14 +15,24 @@
   </head>
   <body>
     <div class="site">
-      <section>
+      <section class="homepage">
         <div class="container">
           <div class="row">
-            <div class="col-12">Logo</div>
-            <div class="col-12">Vins natures</div>
-            <div class="col-7 offset-5">UNIQUE</div>
-            <div class="col-3 offset-9">un gôut sublime</div>
-            <div class="col-12">Header bas</div>
+            <div class="col-12 logo">
+              <img src="img/SVG/logo.svg" alt="logo du domaine de vin" />
+            </div>
+            <div class="col-12"><h1>Vins natures</h1></div>
+            <div class="col-7 offset-5"><h2>UNIQUE</h2></div>
+            <div class="col-3 offset-9">
+              <h3>un gôut <b>sublime</b></h3>
+            </div>
+            <div class="headerbas">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">Header bas</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -64,7 +74,11 @@
         <div class="container">
           <div class="row">
             <div class="col-6">titre</div>
-            <div class="col-8 offset-5">vigneron 1</div>
+          </div>
+          <div class="row">
+            <div class="col-1 offset-5">
+              <div class="vigneron">vigneron 1</div>
+            </div>
             <div class="col-10 offset-8">vigneron 2</div>
           </div>
         </div>
@@ -87,7 +101,7 @@
           </div>
         </div>
       </section>
-      <extends src="base-layout.html"></extends>
+      <extends src="base-layout-footer.html"></extends>
     </div>
 
     <script src="js/main.js" type="module"></script>
