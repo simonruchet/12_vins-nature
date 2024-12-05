@@ -40,6 +40,7 @@ video {
 
 body {
   font-family: Elza;
+  overflow-x: hidden;
 }
 
 .site {
@@ -69,14 +70,14 @@ section:nth-child(even) {
   font-size: 100px;
   font-weight: 900;
   padding-top: 158px;
-  line-height: 91.97%;
+  line-height: 60%;
 }
 
 .homepage h2 {
   color: var(--prim-green, #1c3c22);
   font-family: "Swistblnk Moalang Melintang";
   font-size: 170px;
-  line-height: 67.738%;
+  line-height: 60%;
   font-weight: 400;
 }
 
@@ -84,12 +85,18 @@ section:nth-child(even) {
   font-family: "Playfair Display";
   font-size: 30px;
   font-weight: 900;
-  padding-top: 37px;
 }
 
 .homepage h3 b {
   font-weight: 900;
   color: var(--prim-green, #1c3c22);
+}
+.homepage {
+  background-image: url(../img/img_homepage.png);
+  background-size: 93.5%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position-y: -77px;
 }
 
 .headerbas {
@@ -132,17 +139,18 @@ section:nth-child(even) {
   display: flex;
   gap: 58px;
   font-size: 14px;
+  align-items: center;
 }
 
 .langue {
   display: flex;
   width: 59px;
-  padding: 3px 0px;
+  padding: 8px 0px;
   justify-content: center;
   align-items: center;
   gap: 4px;
   border-radius: 8px;
-  border: 0.7px solid var(--black, #000);
+  border: 0.7px solid black;
   text-align: center;
   font-size: 14px;
 }
@@ -150,8 +158,10 @@ section:nth-child(even) {
 .bgmenu {
   font-size: 10px;
   font-weight: 300;
+  padding: 0;
 }
 
 .headerbascontent {
   display: flex;
+  align-items: center;
 }
