@@ -26,17 +26,17 @@ video {
   --sec-yellow: #f9f8f1; /* Yellow */
 }
 
-.row + .row {
-  margin-top: 16px;
-}
+// .row + .row {
+//   margin-top: 16px;
+// }
 
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
-}
+// .row > .col,
+// .row > [class^="col-"] {
+//   padding-top: 12px;
+//   padding-bottom: 12px;
+//   background-color: rgba(86, 61, 124, 0.15);
+//   border: 1px solid rgba(86, 61, 124, 0.2);
+// }
 
 body {
   font-family: Elza;
@@ -70,21 +70,23 @@ section:nth-child(even) {
   font-size: 100px;
   font-weight: 900;
   padding-top: 158px;
-  line-height: 60%;
+  line-height: 75%;
 }
 
 .homepage h2 {
   color: var(--prim-green, #1c3c22);
   font-family: "Swistblnk Moalang Melintang";
   font-size: 170px;
-  line-height: 60%;
+  line-height: 70%;
   font-weight: 400;
+  margin-top: 7px;
 }
 
 .homepage h3 {
   font-family: "Playfair Display";
   font-size: 30px;
   font-weight: 900;
+  margin-top: 37px;
 }
 
 .homepage h3 b {
@@ -101,7 +103,7 @@ section:nth-child(even) {
 
 .headerbas {
   position: fixed;
-  bottom: 0;
+  bottom: 16px;
   left: 0;
   right: 0;
 }
@@ -164,4 +166,54 @@ section:nth-child(even) {
 .headerbascontent {
   display: flex;
   align-items: center;
+}
+
+.titre .bar {
+  width: 1px;
+  height: 66px;
+  background: #000;
+}
+
+.barchiffre {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  p {
+    font-size: 14px;
+  }
+}
+
+.titre {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+.nouveaute-un .titre {
+  margin-top: 163px;
+}
+
+.titre h1 {
+  font-family: "Playfair Display";
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 103.781%; /* 155.671px */
+}
+
+.texte {
+  font-family: Elza;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nouveaute-un .texte {
+  margin-top: 71px;
+}
+
+.imageblanc {
+  position: relative;
+  top: 0;
+}
+
+.imageblanc img {
+  width: 100%;
 }
