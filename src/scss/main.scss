@@ -53,13 +53,13 @@ section {
   flex-shrink: 0;
 }
 
-section:nth-child(odd) {
-  background-color: #ffdee6;
-}
+// section:nth-child(odd) {
+//   background-color: #ffdee6;
+// }
 
-section:nth-child(even) {
-  background-color: #fff6d5;
-}
+// section:nth-child(even) {
+//   background-color: #fff6d5;
+// }
 
 .homepage .logo {
   padding-top: 32px;
@@ -79,26 +79,34 @@ section:nth-child(even) {
   font-size: 170px;
   line-height: 70%;
   font-weight: 400;
-  margin-top: 7px;
+  margin-top: 15px;
 }
 
 .homepage h3 {
   font-family: "Playfair Display";
   font-size: 30px;
   font-weight: 900;
-  margin-top: 37px;
+  margin-top: 30px;
 }
 
 .homepage h3 b {
   font-weight: 900;
   color: var(--prim-green, #1c3c22);
 }
-.homepage {
-  background-image: url(../img/img_homepage.png);
-  background-size: 93.5%;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-position-y: -77px;
+// .homepage {
+//   background-image: url(../img/img_homepage.png);
+//   background-size: 93.5%;
+//   background-position: right;
+//   background-repeat: no-repeat;
+//   background-position-y: -77px;
+// }
+
+img.img-homepage {
+  width: 108%;
+  margin-right: -66px;
+  margin-bottom: 77px;
+  position: relative;
+  z-index: -1;
 }
 
 .headerbas {
@@ -196,24 +204,83 @@ section:nth-child(even) {
   font-family: "Playfair Display";
   font-size: 150px;
   font-weight: 700;
-  line-height: 103.781%; /* 155.671px */
+  line-height: 103.781%;
 }
 
 .texte {
   font-family: Elza;
   font-size: 20px;
   font-weight: 500;
+  line-height: 26px;
 }
 
 .nouveaute-un .texte {
   margin-top: 71px;
 }
 
-.imageblanc {
-  position: relative;
-  top: 0;
+.imageblanc img {
+  width: 50%;
+  position: absolute;
+  z-index: -1;
 }
 
-.imageblanc img {
+.imagerouge img {
   width: 100%;
+  margin-top: 110px;
+}
+
+.cetteanne {
+  margin-top: 20px;
+}
+
+.textepetit {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.notrenouvelle {
+  margin-top: -200px;
+}
+
+.boutons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+  gap: 21px;
+}
+
+.boutonsolid {
+  display: flex;
+  width: 166px;
+  min-height: 33px;
+  padding: 8px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 2px;
+  background: var(--prim-green, #1c3c22);
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.boutonvide {
+  display: flex;
+  align-items: center;
+  color: black;
+  text-align: center;
+  font-family: Elza;
+  font-size: 12px;
+  font-weight: 275;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: 2.5%;
+  text-underline-offset: 25%;
+  text-underline-position: from-font;
+}
+
+.nouveaute-deux .boutons {
+  margin-top: -100px;
 }
