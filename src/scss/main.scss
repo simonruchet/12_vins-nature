@@ -11,6 +11,7 @@ a {
 img,
 video {
   display: block;
+  max-width: 100%;
 }
 
 @import "bootstrap/scss/bootstrap-grid";
@@ -102,11 +103,7 @@ section {
 // }
 
 img.img-homepage {
-  width: 108%;
-  margin-right: -66px;
-  margin-bottom: 77px;
-  position: relative;
-  z-index: -1;
+  width: 110%;
 }
 
 .headerbas {
@@ -197,7 +194,7 @@ img.img-homepage {
   gap: 4px;
 }
 .nouveaute-un .titre {
-  margin-top: 163px;
+  margin-top: -300px;
 }
 
 .titre h1 {
@@ -215,13 +212,11 @@ img.img-homepage {
 }
 
 .nouveaute-un .texte {
-  margin-top: 71px;
+  margin-top: -80px;
 }
 
-.imageblanc img {
-  width: 50%;
-  position: absolute;
-  z-index: -1;
+.imageblanc {
+  @include colwidth(5);
 }
 
 .imagerouge img {
