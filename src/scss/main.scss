@@ -41,7 +41,7 @@ video {
 
 body {
   font-family: Elza;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .site {
@@ -140,8 +140,8 @@ section {
 }
 
 .vigneron {
-  position: relative;
-  background-color: #1c3c22;
+  // position: relative;
+  // background-color: #1c3c22;
 }
 
 .usershop {
@@ -325,12 +325,10 @@ section {
 
 .vigneron .contenu-nom {
   display: flex;
-  width: 600px;
   padding-top: 48px;
   flex-direction: column;
   align-items: flex-start;
   gap: 11px;
-  flex-shrink: 0;
 }
 
 .vigneron {
@@ -381,4 +379,23 @@ section {
 
 .notre-equipe-deux .boutons {
   transform: translateY(-20px);
+}
+
+.visites .titre h1 {
+  font-size: 100px;
+}
+
+.visites .titre {
+  margin-top: 142px;
+}
+
+.visites .textepetit {
+  margin-top: 41px;
+}
+
+.visites img {
+  bottom: 0;
+  position: absolute;
+  width: 166px;
+  height: 157px;
 }
