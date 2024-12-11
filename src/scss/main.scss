@@ -102,15 +102,22 @@ section {
 //   background-position-y: -77px;
 // }
 
-img.img-homepage {
-  width: 110%;
+.img-homepage {
+  width: calc(100vw - (100vw - 1140px) / 2);
 }
+// .homepage .container {
+//   height: calc(100vh - 77px);
+//   overflow: hidden;
+// }
 
 .headerbas {
   position: fixed;
-  bottom: 16px;
+  padding-bottom: 16px;
+  padding-top: 10px;
+  bottom: 0;
   left: 0;
   right: 0;
+  background-color: white;
 }
 
 .logo {
@@ -278,4 +285,34 @@ img.img-homepage {
 
 .nouveaute-deux .boutons {
   margin-top: -100px;
+}
+
+.philosophie-un {
+  .texte {
+    margin-top: 208px;
+  }
+  .titre {
+    margin-top: 67px;
+  }
+}
+
+.philosophie-deux {
+  background-image: url(../img/img_philosophie.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.philosophie-deux .texte {
+  color: white;
+  margin-top: 334px;
+}
+
+.philosophie-deux .boutonsolid {
+  background-color: white;
+  color: black;
+  margin-top: 40px;
+}
+
+.notre-equipe .titre {
+  margin-top: 208px;
 }
