@@ -142,7 +142,6 @@ section {
 .vigneron {
   position: relative;
   background-color: #1c3c22;
-  @include colwidth(8);
 }
 
 .usershop {
@@ -201,7 +200,7 @@ section {
   gap: 4px;
 }
 .nouveaute-un .titre {
-  margin-top: -300px;
+  margin-top: -380px;
 }
 
 .titre h1 {
@@ -219,10 +218,12 @@ section {
 }
 
 .nouveaute-un .texte {
-  margin-top: -80px;
+  margin-top: -150px;
 }
 
 .imageblanc {
+  width: 751px;
+  height: 562px;
   @include colwidth(5);
 }
 
@@ -314,5 +315,70 @@ section {
 }
 
 .notre-equipe .titre {
-  margin-top: 208px;
+  margin-top: -180px;
+}
+
+.vigneron1 img {
+  width: 356px;
+  height: 236px;
+}
+
+.vigneron .contenu-nom {
+  display: flex;
+  width: 600px;
+  padding-top: 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11px;
+  flex-shrink: 0;
+}
+
+.vigneron {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.vigneron1 {
+  @include colwidth(6);
+  margin-top: 143px;
+}
+
+.vigneron .titre-nom {
+  font-size: 20px;
+  font-weight: 500;
+}
+.vigneron .texte-nom {
+  font-size: 14px;
+}
+
+.vigneron2 img {
+  width: 545px;
+  height: 316px;
+}
+
+.vigneron2 .contenu-nom {
+  padding-top: 116px;
+}
+
+.vigneron2 {
+  margin-top: -118px;
+  @include colwidth(8);
+}
+
+.vigneron3 {
+  @include colwidth(8);
+}
+
+.vigneron3 img {
+  width: 546px;
+  height: 365px;
+}
+
+.vigneron3 .contenu-nom {
+  padding-top: 222px;
+}
+
+.notre-equipe-deux .boutons {
+  transform: translateY(-20px);
 }
