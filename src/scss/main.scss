@@ -113,11 +113,129 @@ section {
 .headerbas {
   position: fixed;
   padding-bottom: 16px;
-  padding-top: 10px;
+  padding-top: 15px;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: white;
+}
+
+footer .newsletter {
+  margin-top: 212px;
+}
+
+footer .newsletter hr {
+  width: 127px;
+}
+
+footer .titre {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+footer .titre b {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+footer .texte {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+footer .newsletter .titre {
+  margin-top: 26px;
+}
+
+footer .email {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 2px;
+  background: rgba(28, 60, 34, 0.15);
+  color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-size: 14px;
+  flex-grow: 1;
+}
+footer .boutonsolid {
+  width: 77px;
+}
+
+footer .inscription {
+  display: flex;
+  gap: 18px;
+  margin-top: 24px;
+  margin-bottom: 41px;
+}
+
+footer .langues {
+  display: flex;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  .fr {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 16.5%; /* 2.475px */
+  }
+}
+
+footer .infos hr {
+  width: 42px;
+}
+footer .infos {
+  margin-top: 242px;
+}
+
+footer .infos .titre {
+  margin-top: 26px;
+  margin-bottom: 18px;
+  line-height: 20px;
+}
+footer .localiser {
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 10px;
+}
+
+footer .suiveznous {
+  margin-top: 70px;
+  font-size: 14px;
+  font-weight: 600;
+  .reseaux {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-top: 8px;
+  }
+}
+
+footer .ventes {
+  margin-top: -140px;
+  hr {
+    width: 71px;
+  }
+}
+
+footer .ventes .titre {
+  margin-top: 26px;
+  margin-bottom: 20px;
+}
+footer .ventes .contact {
+  margin-top: 26px;
+  font-size: 14px;
+  font-weight: 600;
+  p {
+    font-weight: 500;
+    margin-top: 8px;
+  }
+}
+
+footer .ventes .texte {
+  line-height: 35px;
 }
 
 .logo {
@@ -146,6 +264,7 @@ section {
 
 .usershop {
   display: flex;
+  width: 100%;
 }
 
 .texteheader {
@@ -157,8 +276,7 @@ section {
 
 .langue {
   display: flex;
-  width: 59px;
-  padding: 8px 0px;
+  padding: 8px 14px;
   justify-content: center;
   align-items: center;
   gap: 4px;
@@ -378,7 +496,7 @@ section {
 }
 
 .notre-equipe-deux .boutons {
-  transform: translateY(-20px);
+  margin-top: -25px;
 }
 
 .visites .titre h1 {
@@ -396,6 +514,7 @@ section {
 .visites img {
   bottom: 0;
   position: absolute;
+  pointer-events: none;
   width: 166px;
   height: 157px;
 }
