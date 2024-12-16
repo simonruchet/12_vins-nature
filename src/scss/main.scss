@@ -113,7 +113,7 @@ section {
 .headerbas {
   position: fixed;
   padding-bottom: 16px;
-  padding-top: 15px;
+  padding-top: 8px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -261,14 +261,16 @@ footer .copyright {
   right: 0;
 }
 
-@mixin colwidth($multiplication) {
+@mixin colwidth($multiplication, $substract: 0px) {
   width: calc(
-    $multiplication * 100% + $multiplication * 24px - 12px + 100vw - 960px
+    $multiplication * 100% + $multiplication * 24px - 12px + 100vw - 960px -
+      $substract
   );
 
   @media (min-width: 1200px) {
     width: calc(
-      $multiplication * 100% + $multiplication * 24px - 12px + 100vw - 1140px
+      $multiplication * 100% + $multiplication * 24px - 12px + 100vw - 1140px -
+        $substract
     );
   }
 }
@@ -587,6 +589,16 @@ footer .copyright {
   }
 }
 
+.infos-fixe-wrapper {
+  margin-top: -125px;
+  @include colwidth(15, 200px);
+}
+.infos-fixe {
+  width: 261px;
+  position: sticky;
+  left: calc(100% - 261px - 162px);
+}
+
 .page-vin .infos-fixe-vin {
   display: flex;
   justify-content: space-between;
@@ -595,7 +607,6 @@ footer .copyright {
 }
 
 .page-vin .infos-fixe {
-  margin-top: -100px;
   .ligne {
     margin-top: 12px;
   }
@@ -626,7 +637,7 @@ footer .copyright {
 }
 
 .detail-vin .detail-haut img {
-  width: 72%;
+  width: 71%;
 }
 
 .detail-vin .vinification {
@@ -635,20 +646,40 @@ footer .copyright {
 
 .detail-vin .multiples {
   margin-top: -150px;
-  h2 {
-    @include colwidth(2);
-  }
 }
 
 .detail-bas img {
-  width: 72%;
-  margin-top: 100px;
+  position: absolute;
+  bottom: 66px;
+  width: 166px;
+  height: 247px;
 }
 
 .detail-vin .notes {
-  margin-top: -210px;
+  margin-top: 153px;
 }
 
 .detail-vin .biosuisse {
-  margin-top: -52px;
+  position: absolute;
+  bottom: 66px;
+  margin-top: -60px;
+}
+
+.calltoaction {
+  .blanc-zoom {
+    width: 1116px;
+    height: 404px;
+    margin-top: 152px;
+    border-radius: 2px;
+  }
+  background: var(--prim-green, #1c3c22);
+}
+
+.calltoaction .nouveau-blanc {
+  font-family: "Playfair Display";
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 103.781%;
+  margin-top: -200px;
+  margin-left: 184px;
 }
