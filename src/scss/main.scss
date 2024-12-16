@@ -637,7 +637,8 @@ footer .copyright {
 }
 
 .detail-vin .detail-haut img {
-  width: 71%;
+  width: 166px;
+  height: 366px;
 }
 
 .detail-vin .vinification {
@@ -656,7 +657,7 @@ footer .copyright {
 }
 
 .detail-vin .notes {
-  margin-top: 153px;
+  margin-top: 170px;
 }
 
 .detail-vin .biosuisse {
@@ -667,8 +668,7 @@ footer .copyright {
 
 .calltoaction {
   .blanc-zoom {
-    width: 1116px;
-    height: 404px;
+    width: 74%;
     margin-top: 152px;
     border-radius: 2px;
   }
@@ -681,5 +681,19 @@ footer .copyright {
   font-weight: 700;
   line-height: 103.781%;
   margin-top: -200px;
-  margin-left: 184px;
+  margin-left: 13%;
+}
+
+.calltoaction .boutonsolid {
+  color: black;
+  background: var(--sec-yellow, #f9f8f1);
+  width: 100%;
+  margin-top: 34px;
+}
+.calltoaction .boutonvide {
+  color: var(--sec-yellow, #f9f8f1);
+}
+
+.blanc .titre-vin {
+  word-wrap: break-word;
 }
