@@ -238,6 +238,22 @@ footer .ventes .texte {
   line-height: 35px;
 }
 
+footer .logos {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 38px;
+}
+
+footer .copyright {
+  display: flex;
+  margin-top: 51px;
+  font-size: 12px;
+  font-weight: 275;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2.5%;
+  text-underline-offset: 25%;
+}
+
 .logo {
   position: fixed;
   top: 0;
