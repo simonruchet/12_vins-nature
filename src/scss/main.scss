@@ -590,8 +590,8 @@ footer .copyright {
 }
 
 .infos-fixe-wrapper {
-  margin-top: -125px;
-  @include colwidth(15, 200px);
+  margin-top: -90px;
+  @include colwidth(14);
 }
 .infos-fixe {
   width: 261px;
@@ -637,8 +637,7 @@ footer .copyright {
 }
 
 .detail-vin .detail-haut img {
-  width: 166px;
-  height: 366px;
+  height: 350px;
 }
 
 .detail-vin .vinification {
@@ -652,8 +651,7 @@ footer .copyright {
 .detail-bas img {
   position: absolute;
   bottom: 66px;
-  width: 166px;
-  height: 247px;
+  height: 220px;
 }
 
 .detail-vin .notes {
