@@ -81,6 +81,7 @@ section {
   line-height: 70%;
   font-weight: 400;
   margin-top: 15px;
+  animation: letterspacing 2s ease-out infinite;
 }
 
 .homepage h3 {
@@ -283,6 +284,13 @@ footer .copyright {
         $substract
     );
   }
+
+  @media (min-width: 1400px) {
+    width: calc(
+      $multiplication * 100% + $multiplication * 24px - 12px + 100vw - 1320px -
+        $substract
+    );
+  }
 }
 
 .vigneron {
@@ -329,6 +337,9 @@ footer .copyright {
   width: 1px;
   height: 66px;
   background: #000;
+  position: absolute;
+  transition-duration: 4s;
+  animation-timing-function: ease-in-out;
 }
 
 .barchiffre {
@@ -337,6 +348,7 @@ footer .copyright {
   gap: 5px;
   p {
     font-size: 14px;
+    margin-left: 5px;
   }
 }
 
@@ -347,6 +359,10 @@ footer .copyright {
 }
 .nouveaute-un .titre {
   margin-top: -380px;
+}
+
+.titre:hover .bar {
+  height: 40vh;
 }
 
 .titre h1 {
@@ -368,9 +384,10 @@ footer .copyright {
 }
 
 .imageblanc {
-  width: 751px;
-  height: 562px;
   @include colwidth(5);
+}
+.imageblanc img {
+  width: 751px;
 }
 
 .imagerouge img {
@@ -607,7 +624,9 @@ footer .copyright {
 
 .infos-fixe-wrapper {
   margin-top: -90px;
-  @include colwidth(14);
+  @include colwidth(15);
+  background-color: #1c3c22;
+  padding-right: 80;
 }
 .infos-fixe {
   width: 261px;
@@ -728,4 +747,18 @@ footer .copyright {
 
 .boutonvide:hover {
   letter-spacing: 1px;
+}
+
+@keyframes letterspacing {
+  0% {
+    letter-spacing: normal;
+  }
+
+  50% {
+    letter-spacing: 2px;
+  }
+
+  100% {
+    letter-spacing: normal;
+  }
 }
