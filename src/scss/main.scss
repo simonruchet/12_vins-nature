@@ -76,7 +76,7 @@ section {
 
 .homepage h2 {
   color: var(--prim-green, #1c3c22);
-  font-family: "Swistblnk Moalang Melintang";
+  font-family: "Moalang";
   font-size: 170px;
   line-height: 70%;
   font-weight: 400;
@@ -309,6 +309,13 @@ footer .copyright {
   font-size: 14px;
   align-items: center;
 }
+.unique {
+  transition-duration: 0.5s;
+}
+
+.unique:hover {
+  transform: translateX(2px);
+}
 
 .langue {
   display: flex;
@@ -472,8 +479,8 @@ footer .copyright {
 }
 
 .philosophie-deux .boutonsolid {
-  background-color: white;
-  color: black;
+  background: var(--prim-green, #1c3c22);
+  color: rgb(255, 255, 255);
   margin-top: 40px;
 }
 
@@ -612,6 +619,7 @@ footer .copyright {
   border-radius: 10px;
   border: 0.5px solid var(--black, #000);
   transition-duration: 0.4s;
+  animation: changescale 1.5s ease-out infinite;
 
   img {
     width: 16px;
@@ -625,7 +633,6 @@ footer .copyright {
 .infos-fixe-wrapper {
   margin-top: -90px;
   @include colwidth(15);
-  background-color: #1c3c22;
   padding-right: 80;
 }
 .infos-fixe {
@@ -761,4 +768,23 @@ footer .copyright {
   100% {
     letter-spacing: normal;
   }
+}
+
+@keyframes changescale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.philosophie-deux .boutonsolid:hover {
+  background: white;
+  color: #000;
 }
